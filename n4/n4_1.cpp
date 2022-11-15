@@ -60,13 +60,17 @@ bool test(int p, int n)
     for (int i = 1; i <= n; i++)
     {
         int a = (rand() % (p - 2)) + 2;
-        printf(i % 10 == 1 ? "\n [a = %4d]" : " [a = %4d]", a);
+        printf(i % 20 == 1 ? "\n [a = %4d]" : " [a = %4d]", a);
 
-        if (gcd(a, p) != 1)
+        if (gcd(a, p) != 1){
+            printf(i % 20 == 1 ? "\n [a = %4d]" : " [a = %4d]", a);
             return false;
+        }
         
-        if (pows(a, p - 1, p) != 1)
+        if (pows(a, p - 1, p) != 1){
+            printf(i % 20 == 1 ? "\n [a = %4d]" : " [a = %4d]", a);
             return false;
+        }
         
     }
 
