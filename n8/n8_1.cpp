@@ -153,7 +153,7 @@ bool AKS(int n)
                 return true;
             }
             else {
-                printf("");
+                printf(" ");
                 //printf("\n+ + + + + + + [8] Условие не выполнено. Переходим к шагу 3")
                 };
         }
@@ -166,7 +166,7 @@ bool AKS(int n)
                 return true;
             }
             else {
-                printf("");
+                printf(" ");
                 //printf("\n+ + + + + + + [8] Условие не выполнено. Переходим к шагу 3")
                 };
         }
